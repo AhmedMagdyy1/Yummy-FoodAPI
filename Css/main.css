@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000000f2;
+    overflow: hidden;
+}
+
+/* Start Home Section */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 99999999;
+    background-color: #000;
+}
+#nav-bar .navigation {
+    z-index: 5555555;
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+}
+#nav-bar .navigation .side-nav {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+}
+#nav-bar .navigation .social-icn {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+#nav-bar .navigation .social-icn span {
+    cursor: pointer;
+}
+#nav-bar .navigation .side-logo {
+    background-color: white !important;
+    width: 50px;
+    height: 100%;
+    position: relative;
+    z-index: 555555;
+    left: 249px;
+}
+#nav-bar .navigation .side-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px 10px;
+    transition: all 0.5s;
+}
+#nav-bar .navigation #btn {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    font-size: 25px;
+    border: none;
+    color: black;
+    transition: all;
+}
+#nav-bar .navigation .logo {
+    position: absolute;
+    z-index: 555555;
+    right: 25%;
+    top: 5%;
+    font-size: 25px;
+    border: none;
+    color: red;
+    transition: all;
+}
+#nav-bar .navigation #btn:hover{
+    border: none;
+    color: black;
+}
+#nav-bar .navigation #btn p {
+    position: relative;
+    bottom: 7px;
+    margin-left: 5px;
+}
+/* End Home Section */
+
+
+
+
+/* Start Data Section */
+.con-data {
+    position: relative;
+    left: 2%;
+}
+.col-md-3 {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+#rowData img {
+    position: relative;
+    cursor: pointer;
+}
+.layer-img {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    width: 261px;
+    height: 261px;
+    font-size: 26px;
+    padding-left: 10px;
+    color: #000;
+    transition: all 1s;
+    transition-duration: 0.5s;
+    text-align: center;
+    opacity: 0;
+}
+.col-md-3:hover .layer-img{
+    top: 5%;
+    text-align: center;
+    background: rgba(255,255,255,.7);
+    opacity: 1;
+}
+.myMealsInfo ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.myMealsInfo .bold{
+    margin-right: 10px;
+    font-weight: 600;
+}
+.myMealsInfo #recipes .alert-success{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.myMealsInfo .alert-danger{
+    color: #721c24;
+    background-color: #f5c6cb;
+    border-color: #f5c6cb;
+}
+
+/* End Data Section */
+
+/* Start Search Section */
+#SearchAll hr {
+    color: white;
+}
+#SearchAll input:active,:focus{
+    border: none !important;
+    outline:  none !important;
+}
+.layer-img-search {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    width: 300px;
+    height: 300px;
+    font-size: 26px;
+    padding-left: 10px;
+    color: #000;
+    opacity: 0;
+}
+.col-md-3:hover .layer-img-search{
+    top: 5%;
+    text-align: center;
+    background: rgba(255,255,255,.7);
+    transition: all 1s;
+    transition-duration: 1s;
+    opacity: 1;
+}
+/* End Search Section */
+
+
+/* Category */
+.info h2 {
+    font-size: 23px;
+}
+.info p {
+    font-size: 18px;
+}
+
+/* Area */
+.areaSelect {
+    cursor: pointer;
+}
+
+/* Ingredient */
+.Ingredient-info {
+    cursor: pointer;
+}
+.IngredientColor .fa-bowl-food {
+    color: #9ee650ab;
+}
+
+@media screen and (min-width:300px)and (max-width:1200px) {
+    .layer-img-search{
+        width: 0;
+        height: 0;
+    }
+    .col-md-3:hover .layer-img-search {
+        opacity: 0;
+    }
+    .layer-img {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .col-md-3:hover .layer-img{
+        opacity: 0;
+    }
+    .myDiv .inputs {
+        width: 200px;
+        text-align: center;
+    }
+    .myDiv .form-control {
+        width: 200px;
+    }
+    .myDiv .btn {
+        margin-top: 10px;
+    }
+}

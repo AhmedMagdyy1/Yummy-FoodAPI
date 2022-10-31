@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/animate.css" />
+    <link rel="stylesheet" href="Css/main.css" />
+    <link rel="icon" href="Images/logo.png" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <!-- Start Home Section -->
+    <div class="loading-screen">
+      <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <section id="nav-bar">
+      <div class="navigation position-fixed text-white fixed-top">
+        <div class="d-flex flex-column side-nav">
+          <a id="Search" href="#Search">Search</a>
+          <a id="Categories" href="#Categories">Categories</a>
+          <a id="Area" href="#Area">Area</a>
+          <a id="Ingredients" href="#Ingredients">Ingredients</a>
+          <a id="ContactUs" href="#Contact US">Contact US</a>
+          <div class="copyright bg-danger"></div>
+        </div>
+        <div id="side-logo" class="d-flex flex-column bg-light side-logo">
+          <img src="Images/logo.png" alt="Yummy" class="logo w-50" />
+          <button id="btn" class="d-flex btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="social-icn w-75 d-flex flex-column">
+          <div class="d-flex justify-content-around flex-row">
+            <span>
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span>
+              <i class="fa-solid fa-globe"></i>
+            </span>
+          </div>
+          <p class="my-3">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </section>
+    <section class="d-none" id="SearchAll">
+      <div class="container text-center">
+        <div class="row">
+          <div id="searchBars" class="searchBar d-none col-md-6 mt-5">
+            <input
+              class="input-group text-center border-0 bg-transparent text-white"
+              type="text"
+              placeholder="Search By Name"
+              id="searchByName"
+            />
+            <hr class="bg-white" />
+          </div>
+          <div id="searchedBar" class="searchBar d-none col-md-6 mt-5">
+            <input
+              class="input-group text-center border-0 bg-transparent text-white"
+              type="text"
+              maxlength="1"
+              placeholder="Search By First Letter"
+              id="searchByFirstLet"
+            />
+            <hr />
+          </div>
+        </div>
+        <div class="container my-1 py-2 mt-5 con-data">
+          <div id="searchedMeals" class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section id="homeContainer" class="py-5">
+      <div class="container w-75 my-1 py-2 mt-5 con-data">
+        <div id="rowData" class="row text-white"></div>
+        <!-- <div id="mealData" class="row d-flex text-white"></div> -->
+      </div>
+    </section>
+    <!-- End Home Section -->
+    <script src="Js/all.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/wow.min.js"></script>
+    <script src="Js/jquery-3.6.1.min.js"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>
